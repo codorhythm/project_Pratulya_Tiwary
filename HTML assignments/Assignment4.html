@@ -7,27 +7,27 @@
 </head>
 <body>
   <h1>Registration Form</h1>
-  <form action="/submit" method="post">
-    <label for="name">Name:</label>
-    <input type="text" name="name" id="name" required placeholder="Enter your full name">
+  <form>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your full name">
     <br>
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" required placeholder="Enter your email address">
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email address">
     <br>
-    <label for="gender">Gender:</label>
-    <input type="radio" name="gender" id="male" value="male"> Male
-    <input type="radio" name="gender" id="female" value="female"> Female
-    <input type="radio" name="gender" id="other" value="other"> Other
+    <label>Gender:</label>
+    <input type="radio"  value="male"> Male
+    <input type="radio"  value="female"> Female
+    <input type="radio"  value="other"> Other
     <br>
-    <label for="country">Country:</label>
-    <select name="country" id="country">
+    <label>Country:</label>
+    <select>
       <option value="">Select your country</option>
-      <option value="afghanistan">Afghanistan</option>
-      <option value="albania">Albania</option>
+      <option value="afghanistan">India</option>
+      <option value="albania">United kingdom</option>
       </select>
     <br>
-    <label for="address">Address:</label>
-    <textarea name="address" id="address" rows="5" placeholder="Enter your full address"></textarea>
+    <label>Address:</label>
+    <textarea rows="5" placeholder="Enter your full address"></textarea>
     <br>
     <br>
     <button type="submit">Submit</button>
