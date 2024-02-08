@@ -1,116 +1,64 @@
-/* Basic reset and styles */
+/* Reset and basic styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
   }
- 
+  
   /* Header and Navigation styles */
   header {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
-  }
- 
-  nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
   }
- 
+  
+  /* Navigation styles */
+  nav {
+    width: 100%;
+  }
+  
   nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: space-between;
   }
- 
+  
   nav ul li {
-    margin-left: 15px;
+    margin: 0 15px;
   }
- 
+  
   nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: small;
+    padding: 10px;
+    transition: background-color 0.2s ease;
   }
- 
+  
   nav ul li a:hover {
     background-color: #555;
   }
- 
-  /* Logo and Items on the Left */
-  .logo img {
-    max-height: 40px; /* Set maximum height for the logo */
+  
+  /* Logo styles */
+  .logo {
+    flex-grow: 0;
   }
- 
-  /* Right-side Elements */
+  
+  .logo img {
+    max-height: 40px;
+  }
+  
+  /* Right-side elements */
   .right {
     display: flex;
     align-items: center;
   }
- 
+  
   .search-bar {
+    flex-grow: 1;
     display: flex;
-    align-items: center;
-    margin-right: 20px;
-  }
- 
-  .search-bar input[type="text"],
-  .search-bar button {
-    padding: 8px;
-    background-color: #060606;
-  }
- 
- 
- 
-  .icons {
-    display: flex;
-    align-items: center;
-  }
- 
-  .icons img {
-    height: 40px; /* Set the height for the bell icon */
-    margin: 0 10px;
-  }
- 
-  /* Dropdown */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
- 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 120px;
-    z-index: 1;
-  }
- 
-  .dropdown-content a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-  }
- 
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
- 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
- 
-  .dropbtn {
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    align-items: center;
-  }
- 
-  .left {
-    display: flex;
-    align-items: center;
   }
